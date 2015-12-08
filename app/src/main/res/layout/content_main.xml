@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        >
+
+    <ScrollView
+        android:id="@+id/scrollView01"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        >
+
+     <ImageView
+        android:id="@+id/imageView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffffff"
+        android:layout_gravity="top"
+         android:src="@drawable/djbridge"
+         android:visibility="visible"
+         />
+
+   </ScrollView>
+   </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <Button
+            android:id="@+id/btn_up"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:text="▲"/>
+
+        <Button
+            android:id="@+id/btn_down"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:text="▼"/>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:scrollbars="none">
+
+        <ScrollView
+            android:id="@+id/scrollView02"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/imageView02"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffffff"
+                android:gravity="bottom"
+                android:src="@drawable/djbridge"
+                />
+        </ScrollView>
+
+
+    </HorizontalScrollView>
+</LinearLayout>
